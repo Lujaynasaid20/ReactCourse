@@ -1,0 +1,37 @@
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+.card-image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-text {
+  max-width: 400px;
+  font-family: Arial, sans-serif;
+}
+
+.card-text h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+

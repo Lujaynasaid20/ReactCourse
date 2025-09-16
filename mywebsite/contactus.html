@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - MyShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      /* Contact Section Background */
+      .contact-section {
+        background: url('images/contact.png') no-repeat center center/cover;
+        position: relative;
+        padding: 60px 0;
+        color: white;
+      }
+      .contact-section .overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6); /* keeps text readable */
+        z-index: 1;
+      }
+      .contact-section .content {
+        position: relative;
+        z-index: 2;
+      }
+      .contact-section img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+      }
+      .contact-section h5 {
+        margin-top: 10px;
+        color: #fff;
+      }
+      .contact-form {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 25px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">MyShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contactus.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="restaurant.html">My Restaurant</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Section with Background -->
+    <div class="contact-section">
+      <div class="overlay"></div>
+      <div class="container content">
+        <h1 class="mb-5 text-center">Contact Us Through</h1>
+        <div class="row justify-content-center mb-5">
+          <!-- Phone -->
+          <div class="col-6 col-md-3">
+            <a href="https://wa.me/255773004060" target="_blank">
+              <img src="images/call.png" class="img-thumbnail mb-2" alt="call">
+              <h5>+255 773 004 060</h5>
+            </a>
+          </div>
+          <!-- Instagram -->
+          <div class="col-6 col-md-3">
+            <a href="https://www.instagram.com/_lujayna._/#" target="_blank">
+              <img src="images/inst.png" class="img-thumbnail mb-2" alt="instagram">
+              <h5>_lujayna._</h5>
+            </a>
+          </div>
+          <!-- Snapchat -->
+          <div class="col-6 col-md-3">
+            <a href="https://www.snapchat.com/lujayna124" target="_blank">
+              <img src="images/snap.png" class="img-thumbnail mb-2" alt="snapchat">
+              <h5>lujayna124</h5>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form w-75 mx-auto">
+  <h2 class="text-center mb-4 text-dark">Send Us a Message</h2>
+  <form>
+    <div class="mb-3 text-dark">
+      <label for="name" class="form-label">Your Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3 text-dark">
+      <label for="email" class="form-label">Your Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+    </div>
+    <div class="mb-3 text-dark">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success w-100">Send Message</button>
+  </form>
+</div>
+    <!-- Map & Hours -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Map -->
+        <div class="col-md-6">
+          <h3>Our Location</h3>
+          <h5>We are available at Kijichi Kibatini, Zanzibar</h5> 
+        </div>
+        <!-- Hours -->
+        <div class="col-md-6">
+          <h3>Opening Hours</h3>
+          <ul class="list-group">
+            <li class="list-group-item">Mon - Fri: 9:00 AM - 9:00 PM</li>
+            <li class="list-group-item">Saturday: 10:00 AM - 6:00 PM</li>
+            <li class="list-group-item">Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
