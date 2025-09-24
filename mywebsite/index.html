@@ -2,100 +2,267 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lujayna's Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lujayna's Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-        /* Make carousel images fill the screen height */
-        .carousel-item img {
-            height: 80vh; /* 80% of viewport height */
-            object-fit: cover;
-            width: 100%;
-        }
-        /* Optional: caption styling */
-        .carousel-caption {
-            background: rgba(0,0,0,0.4); /* slight background for readability */
-            padding: 15px;
-            border-radius: 10px;
-        }
-    </style>
+  <style>
+    /* Make carousel images fill the screen height */
+    .carousel-item img {
+      height: 80vh;
+      /* 80% of viewport height */
+      object-fit: cover;
+      width: 100%;
+    }
+
+    /* Optional: caption styling */
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.4);
+      /* slight background for readability */
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .food-item img {
+      height: 200px;
+      width: 200px;
+    }
+
+    /* Shortcut nav styles */
+    .shortcut-nav {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    .shortcut-nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      color: #198754;
+      transition: 0.3s;
+    }
+
+    .shortcut-nav a:hover {
+      color: #0d6efd;
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-            <a class="navbar-brand" href="#">MyShop</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="restaurant.html">My restaurant</a></li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyShop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide mb-5">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/lu.png" class="d-block w-100 img-fluid" alt="Slide 1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First Slide Label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/banner.png" class="d-block w-100 img-fluid" alt="Slide 2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second Slide Label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/l.png" class="d-block w-100 img-fluid" alt="Slide 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third Slide Label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="restaurant.html">My Restaurant</a></li>
+        </ul>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <!-- Enhanced Search -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search meals, offers, info...">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide mb-5">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/lu.png" class="d-block w-100 img-fluid" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First Slide Label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner.png" class="d-block w-100 img-fluid" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second Slide Label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/l.png" class="d-block w-100 img-fluid" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third Slide Label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Shortcut Navigation -->
+  <div class="container text-center mb-5 shortcut-nav">
+    <a href="#featured-meals">🍴 Featured Meals</a>
+    <a href="#special-offers">🔥 Special Offers</a>
+    <a href="restaurant.html">📖 Menu</a>
+    <a href="contactus.html">📩 Contact</a>
+  </div>
+
+  <!-- Featured Meals Section -->
+  <div class="container my-5" id="featured-meals">
+    <h2 class="text-center mb-4">🍴 Featured Meals</h2>
+    <div class="row text-center">
+
+      <!-- Pizza -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/pizza.png" class="card-img-top" alt="Pizza" height="200px">
+          <div class="card-body">
+            <h5 class="card-title">Pizza</h5>
+            <p class="card-text">Freshly baked with cheese & toppings.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Burger -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/burger.png" class="card-img-top" alt="Burger" height="200px">
+          <div class="card-body">
+            <h5 class="card-title">Burger</h5>
+            <p class="card-text">Juicy beef burger with fresh veggies.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Juice -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/juice.png" class="card-img-top" alt="Juice" height="200px">
+          <div class="card-body">
+            <h5 class="card-title">Juice</h5>
+            <p class="card-text">Refreshing fruit juices to enjoy with meals.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Button -->
+    <div class="text-center mt-3">
+      <a href="restaurant.html" class="btn btn-success btn-lg">View Full Menu</a>
+    </div>
+  </div>
+
+  <!-- Special Offers Section -->
+  <div class="container my-5" id="special-offers">
+    <h2 class="text-center mb-4">🔥 Special Offers</h2>
+    <div class="row text-center">
+
+      <!-- Offer 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/food.png" class="card-img-top" alt="Food Offer" style="height:250px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">Delicious Meal</h5>
+            <p class="card-text">Tasty meals with a discount this week.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Offer 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/offer.png" class="card-img-top" alt="Special Offer" style="height:250px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">Special Combo</h5>
+            <p class="card-text">Save more with our exclusive combo deal.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Offer 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/combo.png" class="card-img-top" alt="Combo Offer" style="height:250px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">Family Pack</h5>
+            <p class="card-text">Perfect meals for family & friends.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+  <footer class="bg-dark text-light pt-4 mt-5">
+    <div class="container">
+      <div class="row">
+        
+        <!-- About -->
+        <div class="col-md-3 mb-3">
+          <h5>About MyShop</h5>
+          <p>Welcome to Lujayna’s Shop! Fresh meals, great offers, and the best service.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="aboutus.html" class="text-light text-decoration-none">About Us</a></li>
+            <li><a href="restaurant.html" class="text-light text-decoration-none">My Restaurant</a></li>
+            <li><a href="contactus.html" class="text-light text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-3 mb-3">
+          <h5>Contact</h5>
+          <p>Email: lujaynasaid74@gmail.com</p>
+          <p>Phone: +255 773 004 060</p>
+          <p>Dar es Salaam, Tanzania</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-md-3 mb-3">
+          <h5>Follow Us</h5>
+          <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i> Facebook</a><br>
+          <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i> Instagram</a><br>
+          <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i> Twitter</a><br>
+          <a href="#" class="text-light"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+
+      <hr class="bg-light">
+      <p class="text-center mb-0">&copy; 2025 Lujayna. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
 </body>
 
 </html>

@@ -8,72 +8,127 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet">
+
+  <style>
+    /* Carousel image styling */
+    .carousel-item img {
+      height: 70vh;
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
       <a class="navbar-brand" href="#">MyShop</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactus.html">Contact Us</a>
-          </li>
-
-
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="restaurant.html">My restaurant</a></li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <input class="form-control me-2" type="search" placeholder="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
     </div>
-  </nav> -->
-  
- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-            <a class="navbar-brand" href="#">MyShop</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
-                     <li class="nav-item"><a class="nav-link" href="restaurant.html">My restaurant</a></li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-  <div class="d-flex justify-content-center align-items-center mt-5">
-    <img src="images/shop.png" alt="shop" style="width: 500px; height: 500px;" class="img-fluid me-5" />
-    <div class="text-start">
-      <h5 class="card-title">Our shop</h5>
-      <p class="card-text">
-        We are a group of Lujayna's family that started this business together.
-      </p>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/muna.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/m.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/mo.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Awards Section -->
+  <div class="container my-5 text-center">
+    <h2 class="mb-4">🏆 Achievements / Certificate Awards</h2>
+    <div class="d-flex justify-content-center flex-wrap gap-4">
+      <img src="images/award.png" alt="Award 1" style="width:180px; height:180px; object-fit:contain;">
+      <img src="images/crt.png" alt="Award 2" style="width:180px; height:180px; object-fit:contain;">
+      <img src="images/chef.png" alt="Award 3" style="width:180px; height:180px; object-fit:contain;">
     </div>
   </div>
 
+  <!-- Restaurant History -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">🍽️ Our Restaurant History</h2>
+    <p class="text-center lead">
+      Founded in 2010, our restaurant began with a simple dream: bringing families and friends together over delicious,
+      homemade meals. Over the years, we have grown into a beloved spot for both locals and visitors, known for our
+      authentic recipes, fresh ingredients, and warm hospitality. Our chefs take pride in blending tradition with
+      creativity, making every dish memorable.
+    </p>
+  </div>
 
+  <!-- Customer Testimonials -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">💬 What Our Customers Say</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3 mb-4">
+          <div class="card-body">
+            <p>"The food was absolutely amazing, and the staff made us feel at home. Highly recommend!"</p>
+            <h6 class="text-muted">– Sarah A.</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3 mb-4">
+          <div class="card-body">
+            <p>"Best dining experience I’ve had in years. The flavors are unforgettable!"</p>
+            <h6 class="text-muted">– Dida M.</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3 mb-4">
+          <div class="card-body">
+            <p>"A perfect mix of tradition and modern cuisine. I’ll definitely be back with friends."</p>
+            <h6 class="text-muted">– fafaa M.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
+  <!-- Bootstrap Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
